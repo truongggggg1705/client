@@ -4,7 +4,7 @@ import socketIOClient from "socket.io-client";
 import { NotificationService } from "../../../services/notificationService";
 import { useNavigate } from "react-router-dom";
 
-const SOCKET_SERVER_URL = "https://node-mysql-0u5t.onrender.com"; // Replace with your server URL
+const SOCKET_SERVER_URL = "https://server-fw1f.onrender.com"; // Replace with your server URL
 
 
 const NotificationItem = ({ notify, fetchNotifications }: { notify: any; fetchNotifications: () => void }) => {

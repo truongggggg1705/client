@@ -17,7 +17,7 @@ type ChatProps = {
   user: any;
   handleCloseChat: () => void;
 }
-const SOCKET_SERVER_URL = "https://node-mysql-0u5t.onrender.com";
+const SOCKET_SERVER_URL = "https://server-fw1f.onrender.com";
 const ChatWindow: React.FC<ChatProps> = ({ player, user, handleCloseChat }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState<string>('');

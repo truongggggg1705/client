@@ -5,7 +5,7 @@ class Http {
 
   constructor() {
     this.instance = axios.create({
-      baseURL: `https://node-mysql-0u5t.onrender.com/api/v1/`,
+      baseURL: `https://server-fw1f.onrender.com/api/v1/`,
       timeout: 50000,
     });
     const accessToken = localStorage.getItem('accessToken');
