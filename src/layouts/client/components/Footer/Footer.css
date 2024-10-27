@@ -1,0 +1,53 @@
+/* src/components/Footer/Footer.css */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding on top and bottom */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+.footer-container {
+    display: flex; /* Flex layout for sections */
+    justify-content: space-around; /* Space out sections evenly */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the footer */
+}
+
+.footer-section {
+    flex: 1; /* Equal width for sections */
+    margin: 0 20px; /* Margin between sections */
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #fff; /* Underline for section headers */
+    padding-bottom: 10px; /* Padding under header */
+}
+
+.footer-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.social-links li {
+    display: inline; /* Inline display for social links */
+    margin-right: 15px; /* Space between social links */
+}
+
+.social-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Centered text */
+    margin-top: 20px; /* Space above copyright */
+    font-size: 0.8em; /* Smaller font for copyright */
+}

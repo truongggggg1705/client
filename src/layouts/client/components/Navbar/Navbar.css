@@ -1,0 +1,126 @@
+/* src/components/Navbar/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0a6aca; /* Màu nền */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu sắc */
+}
+
+.logo {
+    color: #ffff; /* Màu của logo */
+    text-decoration: none; /* Xóa gạch chân */
+    font-family: 'Arial', sans-serif; /* Phông chữ của logo */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+    text-transform: uppercase; /* Chữ in hoa */
+}
+
+.logo:hover {
+    color: #ecf0f1; /* Màu khi di chuột qua logo */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Khoảng cách giữa các liên kết */
+}
+
+.navbar-links li {
+    position: relative; /* Để có thể tạo hiệu ứng cho liên kết */
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0; /* Khoảng cách trên và dưới */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu sắc */
+}
+
+.navbar-links a:hover {
+    color: #3498db; /* Màu khi di chuột qua liên kết */
+}
+
+.game-select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px; /* Bo góc */
+    outline: none; /* Xóa viền khi được chọn */
+    background-color: #34495e; /* Màu nền của menu chọn */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Hiệu ứng con trỏ chuột */
+}
+
+.game-select:hover {
+    background-color: #3498db; /* Màu nền khi di chuột qua menu chọn */
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 4px; /* Bo góc */
+    outline: none; /* Xóa viền khi được chọn */
+    transition: box-shadow 0.3s; /* Hiệu ứng khi chọn */
+}
+
+.navbar-search input:focus {
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Hiệu ứng bóng khi có focus */
+}
+
+.navbar-search button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #3498db; /* Màu nền nút tìm kiếm */
+    color: white;
+    border-radius: 4px; /* Bo góc */
+    cursor: pointer; /* Hiệu ứng con trỏ chuột */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu sắc */
+}
+
+.navbar-search button:hover {
+    background-color: #2980b9; /* Màu nền khi di chuột qua nút */
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center; /* Căn giữa các biểu tượng */
+}
+
+.navbar-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; /* Kích thước biểu tượng */
+}
+
+.navbar-icons a:hover {
+    color: #3498db; /* Màu khi di chuột qua biểu tượng */
+}
+/* src/components/Navbar/Navbar.css */
+.game-select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px; /* Bo góc */
+    margin: 0 1rem; /* Khoảng cách bên trái và phải */
+    background-color: #ecf0f1; /* Màu nền của dropdown */
+    color: #2c3e50; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.game-select:hover {
+    background-color: #bdc3c7; /* Màu khi di chuột qua dropdown */
+}

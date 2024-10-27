@@ -1,0 +1,80 @@
+/* src/components/Banner/Banner.css */
+.banner-container {
+    display: flex; /* Đặt flexbox cho container */
+    width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+    margin: 0; /* Bỏ khoảng cách mặc định */
+}
+
+.game-categories {
+    flex: 1; /* Chiếm 1/4 không gian cho danh mục game */
+    padding: 20px; /* Khoảng cách bên trong */
+    background-color: #f0f0f0; /* Màu nền cho danh mục game */
+    border-radius: 8px; /* Bo góc */
+    margin-right: 20px; /* Khoảng cách bên phải giữa danh mục game và banner */
+}
+
+.banner {
+    flex: 3; /* Chiếm 3/4 không gian cho banner */
+    position: relative; /* Để định vị nút điều khiển */
+    overflow: hidden; /* Ẩn phần ngoài khung hình */
+    height: 450px; /* Chiều cao khung banner */
+}
+
+.banner-image {
+    width: 100%; /* Đặt chiều rộng hình ảnh bằng 100% khung */
+    height: 100%; /* Đặt chiều cao hình ảnh bằng 100% khung */
+    display: flex; /* Để sử dụng flex cho căn giữa */
+    justify-content: center; /* Căn giữa hình ảnh */
+    align-items: center; /* Căn giữa hình ảnh */
+}
+
+.banner-image img {
+    width: 100%; /* Đặt chiều rộng hình ảnh bằng 100% khung */
+    height: 100%; /* Đặt chiều cao hình ảnh bằng 100% khung */
+    object-fit: cover; /* Cắt hình ảnh để giữ tỷ lệ mà không làm biến dạng */
+    transition: transform 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+.banner-controls {
+    position: absolute; /* Định vị nút điều khiển */
+    top: 50%; /* Đưa nút lên giữa */
+    transform: translateY(-50%); /* Giúp căn giữa */
+    display: flex;
+    justify-content: space-between; /* Giữa hai nút */
+    width: calc(100% - 40px); /* Đặt chiều rộng cho phần tử, giảm chiều rộng để tránh bị khuất */
+    left: 20px; /* Đặt vị trí từ bên trái */
+    right: 20px; /* Đặt vị trí từ bên phải */
+}
+
+.banner-button {
+    background-color: rgba(255, 255, 255, 0.7); /* Màu nền cho nút */
+    border: none; /* Bỏ viền */
+    border-radius: 50%; /* Bo góc thành hình tròn */
+    cursor: pointer; /* Con trỏ chuột */
+    font-size: 24px; /* Kích thước chữ */
+    width: 40px; /* Chiều rộng của nút */
+    height: 40px; /* Chiều cao của nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.banner-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Màu khi di chuột qua */
+}
+.game-categories ul {
+    list-style-type: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0; /* Bỏ padding */
+}
+
+.game-categories li {
+    margin: 10px 0; /* Khoảng cách giữa các mục */
+}
+
+.game-categories a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu chữ */
+}
+
+.game-categories a:hover {
+    color: #007bff; /* Màu chữ khi di chuột qua */
+}
